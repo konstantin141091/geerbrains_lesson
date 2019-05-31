@@ -147,6 +147,11 @@ body {
     font-weight: 700;
     line-height: 26px;
     padding: 20px 20px;
+    text-transform: uppercase;
+}
+
+.menu_link:hover {
+    color: #f16d7f;
 }
 
 .promo {
@@ -731,4 +736,8 @@ block3_right_text .block3_right_text_top:nth-child(2) {
 .footer_bottom {
     height: 79px;
     background-color: #e6e6e6;
+}
+
+.footer_menu li a:hover {
+    color: #f16d7f;
 }
