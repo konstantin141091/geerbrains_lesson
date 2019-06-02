@@ -70,6 +70,7 @@ body {
     line-height: 35px;
     letter-spacing: 0.35px;
     padding-left: 15px;
+    position: relative;
 }
 
 .button_browse img {
@@ -109,6 +110,7 @@ body {
 .header_right {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .logo_basket {
@@ -862,4 +864,45 @@ block3_right_text .block3_right_text_top:nth-child(2) {
 
 .drop_position_center:before {
     left: 215px;
+}
+
+.browse_drop {
+    display: block;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: solid 1px #e8e8e8;
+    position: absolute;
+}
+
+.browse_drop_block {
+    display: block;
+}
+
+.basket_drop {
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: solid 1px #e8e8e8;
+    position: absolute;
+    top: 49px;
+    padding: 21px 16px;
+}
+
+.basket_drop_product_text a {
+    color: #222222;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.basket_drop_product {
+    display: flex;
+}
+
+.basket_drop_product_text p {
+    color: #f16d7f;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 10px;
 }
