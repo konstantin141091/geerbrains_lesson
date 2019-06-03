@@ -110,11 +110,14 @@ body {
 .header_right {
     display: flex;
     align-items: center;
-    position: relative;
 }
 
 .logo_basket {
     margin-right: 26px;
+}
+
+.logo_basket_div:hover .basket_drop {
+    display: block;
 }
 
 .buttom_my_account {
@@ -842,6 +845,7 @@ block3_right_text .block3_right_text_top:nth-child(2) {
     float: right;
     margin-top: 60px;
 }
+
 .menu_list {
     position: relative;
 }
@@ -866,37 +870,30 @@ block3_right_text .block3_right_text_top:nth-child(2) {
     left: 215px;
 }
 
-.browse_drop {
-    display: block;
-    border-radius: 5px;
-    background-color: #ffffff;
-    border: solid 1px #e8e8e8;
-    position: absolute;
-}
-
-.browse_drop_block {
-    display: block;
-}
-
 .basket_drop {
     border-radius: 5px;
     background-color: #ffffff;
     border: solid 1px #e8e8e8;
-    position: absolute;
-    top: 49px;
+    position: absolute!important;
+    top: 54px;
+    left: -16px;
     padding: 21px 16px;
+    display: none;
 }
 
 .basket_drop_product_text a {
     color: #222222;
     font-size: 12px;
     font-weight: 700;
-    text-transform: uppercase;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .basket_drop_product {
     display: flex;
+    border-bottom: solid 1px #e8e8e8;
+    padding: 0 0 14px 0;
+    margin-bottom: 16px;
 }
 
 .basket_drop_product_text p {
@@ -905,4 +902,88 @@ block3_right_text .block3_right_text_top:nth-child(2) {
     font-weight: 400;
     text-transform: uppercase;
     font-size: 10px;
+}
+
+.basket_drop_product_text {
+    margin: 10px 52px 0 14px;
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+.basket_drop_product_text img {
+    width: 56px;
+    margin: 10px 0 12px 0;
+}
+
+.basket_drop_i {
+    margin-top: 34px;
+}
+
+.basket_drop_i:hover {
+    color: #f16d7f;
+}
+
+.basket_drop_summa p {
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.basket_drop_summa {
+    display: flex;
+    justify-content: space-between;
+}
+
+.basket_drop_buttom_block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.basket_drop_buttom_block .basket_drop_buttom:first-child {
+    margin-bottom: 11px;
+}
+
+.basket_drop_buttom {
+    display: flex;
+    width: 225px;
+    height: 50px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.basket_drop_buttom:hover {
+    border: solid 1px #f16d7f;
+    color: #f16d7f;
+}
+
+.basket_drop:before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    position: absolute;
+    top: -7px;
+    left: 28px;
+    transform: rotate(45deg);
+    border-top: solid 1px #e8e8e8;
+    border-left: solid 1px #e8e8e8;
+}
+.logo_basket_div:hover .basket_drop {
+    display: block;
+    position: relative;
+}
+
+.logo_basket_div {
+    position: relative;
 }
