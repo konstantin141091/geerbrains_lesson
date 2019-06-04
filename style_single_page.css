@@ -2,10 +2,8 @@
     height: 925px;
 }
 
-.block_show_top {
-    height: 148px;
-    background-color: #f8f3f4;
-}
+
+
 
 .block_show_top_content {
     height: 100%;
@@ -251,4 +249,8 @@ select {
     display: flex;
     justify-content: space-between;
     margin-top: 72px;
+}
+
+.show_info_form select {
+    outline: none;
 }
