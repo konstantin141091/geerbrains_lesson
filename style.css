@@ -70,7 +70,6 @@ body {
     line-height: 35px;
     letter-spacing: 0.35px;
     padding-left: 15px;
-    position: relative;
 }
 
 .button_browse img {
@@ -979,6 +978,7 @@ block3_right_text .block3_right_text_top:nth-child(2) {
     border-top: solid 1px #e8e8e8;
     border-left: solid 1px #e8e8e8;
 }
+
 .logo_basket_div:hover .basket_drop {
     display: block;
     position: relative;
@@ -986,5 +986,75 @@ block3_right_text .block3_right_text_top:nth-child(2) {
 
 .logo_basket_div {
     position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
-.
+
+.drop_browse {
+    position: absolute;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: solid 1px #e8e8e8;
+    padding: 4px 13px 11px 13px;
+    width: 238px;
+    z-index: 1;
+    display: none;
+}
+
+.drop_browse:before {
+       content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: -6px;
+    left: 68px;
+    transform: rotate(45deg);
+    border-top: solid 1px #e8e8e8;
+    border-left: solid 1px #e8e8e8;
+}
+
+.drop_browse .drop_browse_block:nth-child(2) {
+    margin-top: 15px;
+}
+
+.drop_browse_menu {
+    list-style-type: none;
+    margin-left: 5px;
+}
+
+.drop_browse_link {
+    text-decoration: none;
+    color: #4f4f4f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.35px;
+}
+
+.drop_browse_link:hover {
+    color: #f16d7f;
+}
+
+.drop_browse_block p {
+    border-bottom: solid 1px #e8e8e8;
+}
+
+.button_browse_div:hover .drop_browse {
+    display: block;  
+}
+
+.drop_browse_block p {
+    color: #232323;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.35px;
+}
+
+.buttom_browse_div {
+    position: relative;
+}
