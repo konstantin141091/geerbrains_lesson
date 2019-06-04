@@ -175,10 +175,11 @@ body {
     margin-top: 224px;
     color: #222222;
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     border-left: solid 12px #f16d7f;
+    line-height: 37px;
 }
 
 .promo_text p:first-child {
@@ -186,6 +187,8 @@ body {
     font-weight: 400;
     font-size: 60px;
     letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    line-height: 40px
 }
 
 .promo_text span {
@@ -266,6 +269,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 0.45px;
+    
 }
 
 .block2 {
@@ -998,7 +1002,6 @@ block3_right_text .block3_right_text_top:nth-child(2) {
     border: solid 1px #e8e8e8;
     padding: 4px 13px 11px 13px;
     width: 238px;
-    z-index: 1;
     display: none;
 }
 
@@ -1042,8 +1045,9 @@ block3_right_text .block3_right_text_top:nth-child(2) {
     border-bottom: solid 1px #e8e8e8;
 }
 
-.button_browse_div:hover .drop_browse {
+.buttom_browse_div:hover .drop_browse {
     display: block;  
+    z-index: 999;
 }
 
 .drop_browse_block p {
