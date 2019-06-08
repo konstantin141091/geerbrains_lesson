@@ -941,6 +941,10 @@ block3_right_text .block3_right_text_top:nth-child(2) {
   justify-content: space-between;
   align-items: center;
 }
+.block_show_top a:last-child {
+  font-weight: 700;
+  color: #f16d7f;
+}
 .cart_button {
   display: flex;
   justify-content: center;
@@ -981,4 +985,10 @@ block3_right_text .block3_right_text_top:nth-child(2) {
   font-weight: 300;
   padding-left: 18px;
   padding-right: 18px;
+}
+.far {
+  color: #c0c0c0;
+}
+.far:hover {
+  color: #f16d7f;
 }
