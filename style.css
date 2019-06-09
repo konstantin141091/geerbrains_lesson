@@ -99,6 +99,12 @@ body {
 .logo_basket {
   margin-right: 26px;
 }
+.logo_basket img {
+  transition: 1s;
+}
+.logo_basket img:hover {
+  transform: rotate(360deg);
+}
 .logo_basket_div:hover .basket_drop {
   display: block;
 }
@@ -579,9 +585,11 @@ block3_right_text .block3_right_text_top:nth-child(2) {
   width: 263px;
   position: relative;
   margin-bottom: 39px;
+  transition: 0.5s;
 }
 .block2_product:hover {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+  transform: scale(1.1);
 }
 .block2_product:hover .product_basket {
   display: block;
