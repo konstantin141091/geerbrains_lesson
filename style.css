@@ -997,7 +997,8 @@ fa-times-circle {
   transform: scale(1.5); }
 
 .fa-times-circle {
-  color: #c0c0c0; }
+  color: #c0c0c0;
+  transition: 0.5s; }
 
 a {
   text-decoration: none; }
