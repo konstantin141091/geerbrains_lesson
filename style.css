@@ -662,6 +662,7 @@ block3_right_text .block3_right_text_top:nth-child(2) {
   border: 1px solid #e6e6e6;
   padding: 10px 25px 10px 25px;
   display: none;
+  z-index: 100;
 }
 .drop:before {
   content: '';
@@ -994,11 +995,17 @@ block3_right_text .block3_right_text_top:nth-child(2) {
   padding-left: 18px;
   padding-right: 18px;
 }
-.far {
+fa-times-circle {
   color: #c0c0c0;
   transition: 0.5s;
 }
-.far:hover {
+.fa-times-circle:hover {
   color: #f16d7f;
   transform: scale(1.5);
+}
+.fa-times-circle {
+  color: #c0c0c0;
+}
+a {
+  text-decoration: none;
 }
