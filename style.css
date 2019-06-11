@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap");
 * {
   margin: 0;
   padding: 0; }
 
 body {
   font-family: 'Lato', sans-serif; }
+
+a {
+  text-decoration: none; }
 
 .container {
   margin: 0 auto;
@@ -19,10 +23,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 100%; }
-  .header .header_left {
-    display: flex;
-    align-items: center; }
-  .header .header_right {
+  .header .header_left, .header .header_right {
     display: flex;
     align-items: center; }
 
@@ -31,7 +32,6 @@ body {
   height: 51px;
   align-items: center;
   margin-right: 37px;
-  text-decoration: none;
   color: #222222;
   font-size: 27px;
   font-weight: 300;
@@ -52,9 +52,7 @@ body {
   border-radius: 3px 0 0 3px;
   border: 1px solid #e6e6e6;
   background-color: #f7f7f7;
-  text-decoration: none;
   color: #222222;
-  font-family: Lato;
   font-size: 14px;
   font-weight: 400;
   line-height: 35px;
@@ -111,8 +109,7 @@ body {
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0.38px;
-  padding-left: 19px;
-  text-decoration: none; }
+  padding-left: 19px; }
 
 .buttom_my_account img {
   margin: 0 0 1px 8px; }
@@ -125,7 +122,6 @@ body {
   align-items: center; }
 
 .menu_link {
-  text-decoration: none;
   color: #222222;
   font-size: 14px;
   font-weight: 700;
@@ -761,7 +757,6 @@ block3_right_text .block3_right_text_top:nth-child(2) {
 
 .basket_drop_product_text p {
   color: #f16d7f;
-  font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 10px; }
@@ -988,19 +983,12 @@ block3_right_text .block3_right_text_top:nth-child(2) {
   padding-left: 18px;
   padding-right: 18px; }
 
-fa-times-circle {
+.fa-times-circle {
   color: #c0c0c0;
   transition: 0.5s; }
 
 .fa-times-circle:hover {
   color: #f16d7f;
   transform: scale(1.5); }
-
-.fa-times-circle {
-  color: #c0c0c0;
-  transition: 0.5s; }
-
-a {
-  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
