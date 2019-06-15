@@ -98,7 +98,8 @@
   font-weight: 400;
   padding: 0 7px;
   margin-right: 107px;
-  margin-left: 138px; }
+  margin-left: 138px;
+  -moz-appearance: textfield; }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -272,7 +273,6 @@ input::placeholder {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row-reverse;
   height: 37px;
   padding-left: 11px; }
 
@@ -376,14 +376,14 @@ summary:focus {
   height: 11px;
   border: 1px solid #ebebeb;
   background: #ffffff;
-  border-radius: 0px; }
+  border-radius: 0; }
 
 /* checked mark aspect */
 [type="checkbox"]:not(:checked) + label:after,
 [type="checkbox"]:checked + label:after {
-  content: 'тЬФ';
+  content: 'тЬУ';
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 6px;
   font-size: 15px;
   line-height: 1.4;
@@ -474,7 +474,8 @@ summary:focus {
   border: none;
   outline: none;
   margin-left: 4px;
-  width: 82px; }
+  width: 82px;
+  height: 30px; }
 
 .catalog_setting_show p {
   color: #6f6e6e;
@@ -502,7 +503,8 @@ summary:focus {
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
-  margin-left: 8px; }
+  margin-left: 8px;
+  height: 30px; }
 
 .catalog_product {
   height: 364px; }
