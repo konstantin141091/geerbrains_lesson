@@ -114,6 +114,18 @@ select {
   font-weight: 400;
   line-height: 24px;
 }
+/*This will work for firefox*/
+@-moz-document url-prefix() {
+  select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent url('img/arrow_single_page.png') no-repeat right center;
+    background-position: 126px;
+    padding: 2px 30px 2px 2px;
+    border: 1px solid #eaeaea;
+  }
+}
 .show_info_bottom {
   display: flex;
   width: 538px;

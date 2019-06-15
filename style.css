@@ -134,6 +134,17 @@ input::-webkit-inner-spin-button {
   padding-right: 9px;
   margin: 22px 0 20px 0; }
 
+/*This will work for firefox*/
+@-moz-document url-prefix() {
+  .cart_form1 select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent url("img/arrow_country.png") no-repeat right center;
+    background-position: 334px;
+    padding: 2px 30px 2px 2px;
+    border: 1px solid #eaeaea;
+    margin-right: 6px; } }
 .cart_form1 input {
   width: 317px;
   height: 43px;
@@ -477,6 +488,26 @@ summary:focus {
   width: 82px;
   height: 30px; }
 
+/*This will work for firefox*/
+@-moz-document url-prefix() {
+  .catalog_setting_sort select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent url("img/arrow_sort.png") no-repeat right center;
+    padding: 2px 30px 2px 2px;
+    border: none;
+    width: 71px;
+    margin-right: 6px; }
+
+  .catalog_setting_show select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent url("img/arrow_sort.png") no-repeat right center;
+    padding: 2px 30px 2px 2px;
+    border: none;
+    margin-right: 3px; } }
 .catalog_setting_show p {
   color: #6f6e6e;
   font-size: 14px;
@@ -853,6 +884,16 @@ select {
   font-weight: 400;
   line-height: 24px; }
 
+/*This will work for firefox*/
+@-moz-document url-prefix() {
+  select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent url("img/arrow_single_page.png") no-repeat right center;
+    background-position: 126px;
+    padding: 2px 30px 2px 2px;
+    border: 1px solid #eaeaea; } }
 .show_info_bottom {
   display: flex;
   width: 538px;

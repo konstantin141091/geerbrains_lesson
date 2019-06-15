@@ -221,6 +221,28 @@ summary:focus {
   width: 82px;
   height: 30px;
 }
+/*This will work for firefox*/
+@-moz-document url-prefix() {
+  .catalog_setting_sort select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent url('img/arrow_sort.png') no-repeat right center;
+    padding: 2px 30px 2px 2px;
+    border: none;
+    width: 71px;
+    margin-right: 6px;
+  }
+  .catalog_setting_show select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent url('img/arrow_sort.png') no-repeat right center;
+    padding: 2px 30px 2px 2px;
+    border: none;
+    margin-right: 3px;
+  }
+}
 .catalog_setting_show p {
   color: #6f6e6e;
   font-size: 14px;
