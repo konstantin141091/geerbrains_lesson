@@ -99,6 +99,7 @@
   padding: 0 7px;
   margin-right: 107px;
   margin-left: 138px;
+  -moz-appearance: textfield;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -132,6 +133,20 @@ input::-webkit-inner-spin-button {
   padding-left: 18px;
   padding-right: 9px;
   margin: 22px 0 20px 0;
+}
+
+/*This will work for firefox*/
+@-moz-document url-prefix() {
+  .cart_form1 select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent url('img/arrow_country.png') no-repeat right center;
+    background-position: 334px;
+    padding: 2px 30px 2px 2px;
+    border: 1px solid #eaeaea;
+    margin-right: 6px;
+  }
 }
 .cart_form1 input {
   width: 317px;

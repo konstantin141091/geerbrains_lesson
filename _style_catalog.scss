@@ -17,7 +17,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row-reverse;
   height: 37px;
   padding-left: 11px;
 }
@@ -121,14 +120,14 @@ summary:focus {
   height: 11px;
   border: 1px solid #ebebeb;
   background: #ffffff;
-  border-radius: 0px;
+  border-radius: 0;
 }
 /* checked mark aspect */
 [type="checkbox"]:not(:checked) + label:after,
 [type="checkbox"]:checked + label:after {
-  content: '✔';
+  content: '✓';
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 6px;
   font-size: 15px;
   line-height: 1.4;
@@ -220,6 +219,29 @@ summary:focus {
   outline: none;
   margin-left: 4px;
   width: 82px;
+  height: 30px;
+}
+/*This will work for firefox*/
+@-moz-document url-prefix() {
+  .catalog_setting_sort select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent url('img/arrow_sort.png') no-repeat right center;
+    padding: 2px 30px 2px 2px;
+    border: none;
+    width: 71px;
+    margin-right: 6px;
+  }
+  .catalog_setting_show select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent url('img/arrow_sort.png') no-repeat right center;
+    padding: 2px 30px 2px 2px;
+    border: none;
+    margin-right: 3px;
+  }
 }
 .catalog_setting_show p {
   color: #6f6e6e;
@@ -248,6 +270,7 @@ summary:focus {
   font-weight: 400;
   line-height: 26px;
   margin-left: 8px;
+  height: 30px;
 }
 .catalog_product {
   height: 364px;
