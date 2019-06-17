@@ -114,10 +114,12 @@ details summary::-webkit-details-marker {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
+  transition: 0.5s;
 }
 .checkout_button:hover {
   border: 1px solid #f16d7f;
   color: #f16d7f;
+  transform: scale(1.1);
 }
 .control-group {
   margin-top: 28px;
