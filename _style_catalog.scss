@@ -59,7 +59,6 @@ summary:focus {
 }
 .catalog_setting_trend p {
   color: #6f6e6e;
-  font-family: Lato;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
@@ -311,13 +310,40 @@ summary:focus {
   color: #4a4a4a;
   font-size: 16px;
   font-weight: bold;
+  transition: 0.5s;
 }
 .button_view_all:hover {
   border: 1px solid #ef5b70;
   color: #ef5b70;
+  transform: scale(1.1);
 }
 .catalog_view {
   display: flex;
   justify-content: space-between;
   margin-left: 49px;
+}
+
+.catalog__block2 {
+  display: flex;
+  align-items: center;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  height: 341px;
+  background-color: #222224;
+  &__info {
+    width: 309px;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & h4 {
+      font-size: 20px;
+      margin: 32px 0 17px 0;
+    }
+    & p {
+      font-size: 14px;
+    }
+  }
 }

@@ -121,6 +121,13 @@ input::-webkit-inner-spin-button {
   justify-content: space-between;
   margin-top: 40px;
 }
+.cart_button {
+  transition: 0.5s;
+}
+
+.cart_button:hover{
+  transform: scale(1.1);
+}
 .cart_form1 select {
   width: 355px;
   height: 45px;
@@ -194,11 +201,13 @@ input::placeholder {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 3px;
+  transition: 0.5s;
 }
 .cart_form1_button:hover,
 .cart_form2_button:hover {
   border: 1px solid #f16d7f;
   color: #f16d7f;
+  transform: scale(1.1);
 }
 .cart_form2 p {
   color: #000000;
@@ -220,6 +229,7 @@ input::placeholder {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 25px;
+  transition: 0.5s;
 }
 .cart_form3 {
   height: 214px;
@@ -267,4 +277,8 @@ input::placeholder {
   font-weight: 700;
   text-transform: uppercase;
   margin: 17px 1px 0 1px;
+  transition: 0.5s;
+}
+.cart_form3_button:hover{
+  transform: scale(1.1);
 }
