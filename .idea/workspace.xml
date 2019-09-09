@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0dc240c0-2101-486b-bcad-426605353cd4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/.sass-cache/95444330fb731f1164e41bd732a2503dc708f8ac/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/css/.sass-cache/95444330fb731f1164e41bd732a2503dc708f8ac/style.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-    </list>
+    <list default="true" id="0dc240c0-2101-486b-bcad-426605353cd4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1972">
-              <caret line="128" column="1" lean-forward="true" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
+            <state relative-caret-position="289">
+              <caret line="140" column="14" selection-start-line="140" selection-start-column="14" selection-end-line="140" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -244,12 +234,12 @@
       <workItem from="1564363687694" duration="23000" />
       <workItem from="1566543692793" duration="3033000" />
       <workItem from="1566549008564" duration="2512000" />
-      <workItem from="1567912731105" duration="16724000" />
+      <workItem from="1567912731105" duration="17298000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39134000" />
+    <option name="totallyTimeSpent" value="39708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -496,8 +486,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="128" column="1" lean-forward="true" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
+        <state relative-caret-position="289">
+          <caret line="140" column="14" selection-start-line="140" selection-start-column="14" selection-end-line="140" selection-end-column="14" />
         </state>
       </provider>
     </entry>
