@@ -1060,6 +1060,9 @@ a {
   width: 1140px; }
 
 .header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
   height: 100px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
   border: 1px solid #ececec;
@@ -1162,6 +1165,13 @@ a {
 .buttom_my_account img {
   margin: 0 0 1px 8px; }
 
+nav {
+  position: fixed;
+  width: 100%;
+  margin-top: 100px;
+  background-color: #ffffff;
+  z-index: 80; }
+
 .menu {
   height: 51px;
   list-style: none;
@@ -1179,6 +1189,9 @@ a {
 
 .menu_link:hover {
   color: #f16d7f; }
+
+main {
+  padding-top: 151px; }
 
 .promo {
   height: 614px;
@@ -1392,7 +1405,7 @@ a {
 .block3_right_text p:nth-child(5) {
   margin-top: 48px; }
 
-.comemnt {
+.comment {
   height: 438px;
   background-image: url(../img/comment_fon.png);
   background-repeat: no-repeat;
@@ -1778,8 +1791,7 @@ a {
   position: absolute !important;
   top: 54px;
   left: -16px;
-  padding: 21px 16px;
-  display: none; }
+  padding: 21px 16px; }
 
 .basket_drop_product_text a {
   color: #222222;
