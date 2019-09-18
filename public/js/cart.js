@@ -2,28 +2,50 @@ Vue.component('cart', {
     data(){
         return {
             imgCart: 'https://placehold.it/50x100',
-            cartUrl: '/getBasket.json',
+            cartUrl: 'server/db/userCart.json',
             cartItems: [],
             total: 0,
             showCart: false,
         }
     },
     methods: {
-        remove(item) {
-            this.$root.getJson(`${API}/deleteFromBasket.json`)
-                .then(data => {
-                    if(data.result === 1) {
-                        if(item.quantity>1){
-                            item.quantity--;
-                        } else {
-                            this.cartItems.splice(this.cartItems.indexOf(item), 1)
+        addProduct(product){
+            let find = this.cartItems.find(el => el.id_product === product.id_product);
+            if(find){
+                this.$root.putJson(`/api/cart/${find.id_product}`, {quantity: 1});
+                find.quantity++;
+            } else {
+                let prod = Object.assign({quantity: 1}, product);
+                this.$root.postJson('/api/cart', prod)
+                    .then(data => {
+                        if (data.result === 1) {
+                            this.cartItems.push(prod);
                         }
-                    }
-                })
+                    });
+            }
         },
+        remove(product){
+            let find = this.cartItems.find(el => el.id_product === product.id_product);
+            if(find.quantity > 1){
+                console.log(product.quantity);
+                this.$root.putJson(`/api/cart/${find.id_product}`, {quantity: -1});
+                find.quantity--;
+            } else {
+                console.log('удалить товар');
+                this.$root.deleteJson(`/api/cart/${product.id_product}`)
+                    .then(data => {
+                        console.log('123')
+                        if (data.result === 1) {
+                            this.cartItems.splice(this.cartItems.indexOf(product), 1);
+                        }
+                    });
+            }
+        },
+
+
     },
     mounted(){
-        this.$parent.$parent.getJson(`${API + this.cartUrl}`)
+        this.$parent.$parent.getJson(`/api/cart`)
             .then(data => {
                 for(let el of data.contents){
                     this.cartItems.push(el);
@@ -33,13 +55,12 @@ Vue.component('cart', {
     },
     template: `
                <div>
-                    <a href="#" class="logo_basket" @click="showCart=!showCart"><img src="img/basket%20header.svg" alt="basket">
-                    </a>
+                    <img src="img/basket%20header.svg" alt="basket" class="logo_basket" @click="showCart=!showCart">
                     <div class="basket_drop" v-show="showCart">                       
                             <cart-item v-for="item of cartItems" 
                                     :key="item.id_product"
                                     :cart-item="item" 
-                                    :img="imgCart"
+                                    :img="item.img"
                                     @remove="remove">
                              </cart-item>
                             <div class="basket_drop_summa">
@@ -69,7 +90,7 @@ Vue.component('cartItem', {
     template: `
             <div class="basket_drop_product">
                 <div class="basket_drop_product">
-                 <a href="single%20page.html"><img :src="img" alt="some"></a>
+                 <a href="single%20page.html"><img :src="img" alt="some"class="basket_drop_product_img"></a>
                     <div class="basket_drop_product_text"> 
                         <a href="single%20page.html">{{cartItem.product_name}}</a> 
                         <img src="img/basket_drop_rating.png" alt="some">

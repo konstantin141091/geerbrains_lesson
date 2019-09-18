@@ -1,0 +1,20 @@
+{
+    "amount": 46600,
+    "countGoods": 3,
+    "contents": [
+        {
+            "quantity": 1,
+            "id_product": 101,
+            "product_name": "Gamepad",
+            "price": 3000,
+            "img": "img/tovar2.jpg"
+        },
+        {
+            "quantity": 1,
+            "id_product": 100,
+            "product_name": "Keyboard",
+            "price": 1600,
+            "img": "img/tovar1.jpg"
+        }
+    ]
+}

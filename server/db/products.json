@@ -1,0 +1,50 @@
+[
+  {
+    "id_product": 100,
+    "product_name": "Keyboard",
+    "price": 1600,
+    "img": "img/tovar1.jpg"
+  },
+  {
+    "id_product": 101,
+    "product_name": "Gamepad",
+    "price": 3000,
+    "img": "img/tovar2.jpg"
+  },
+  {
+    "id_product": 102,
+    "product_name": "Ноутбук",
+    "price": 45600,
+    "img": "img/tovar3.png"
+  },
+  {
+    "id_product": 103,
+    "product_name": "Мышка",
+    "price": 1000,
+    "img": "img/tovar4.jpg"
+  },
+  {
+    "id_product": 104,
+    "product_name": "Keyboard",
+    "price": 1600,
+    "img": "img/tovar5.jpg"
+  },
+  {
+    "id_product": 105,
+    "product_name": "Gamepad",
+    "price": 3000,
+    "img": "img/tovar6.jpg"
+  },
+  {
+    "id_product": 106,
+    "product_name": "Ноутбук",
+    "price": 45600,
+    "img": "img/tovar7.jpg"
+  },
+  {
+    "id_product": 107,
+    "product_name": "Мышка",
+    "price": 1000,
+    "img": "img/tovar8.jpg"
+  }
+]

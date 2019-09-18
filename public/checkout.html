@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Просмотр товара</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/bf05fd6411.js"></script>
+    <script src="https://kit.fontawesome.com/bf05fd6411.js"></script>
 </head>
 
 <body>
@@ -398,100 +398,248 @@
         </ul>
     </div>
 </nav>
-<div class="block_show">
-    <div class="block_show_top">
-        <div class="block_show_top_content container">
-            <p>New Arrivals </p>
-            <div class="block_show_menu"> <a href="index.html">Home</a>&nbsp;/ <a href="catalog.html">Men</a>&nbsp;/ <a href="#">New Arrivals</a> </div>
-        </div>
-    </div>
-    <div class="block_show_bottom">
-        <div class="show_bottom_content container"> <img src="img/show_tovar.jpg" alt="img"> </div>
+<div class="new_arrivals">
+    <div class="block_show_top container">
+        <p>New Arrivals </p>
+        <div class="block_show_menu"> <a href="index.html">Home</a>&nbsp;/ <a href="catalog.html">Men</a>&nbsp;/ <a class="show_menu_activ" href="#">New Arrivals</a> </div>
     </div>
 </div>
-<div class="show_info container">
-    <div class="show_info_text">
-        <p>WOMEN COLLECTION</p> <img src="img/show_info_hr_white.png" alt="img"> <img src="img/show_info_hr.png" alt="img">
-        <p>Moschino Cheap And Chic</p>
-        <p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
-        <p>MATERIAL: <span>COTTON</span>DESIGNER: <span>BINBURHAN</span></p>
-        <p>$561</p> <img src="img/show_info_hr_long.png" alt="img"> </div>
-    <div class="show_info_bottom">
-        <div class="show_info_form">
-            <p>CHOOSE COLOR</p>
-            <select name="color_select" id="color">
-                <option value="red">Red</option>
-                <option value="green">Green</option>
-                <option value="black">Black</option>
-            </select>
+<div class="checkout container">
+    <details class="checkout__details">
+        <summary><span>01.</span>Shipping Adress</summary>
+        <div class="details__container">
+            <div class="details__left">
+                <h3>Check as&nbsp;a&nbsp;guest or&nbsp;register</h3>
+                <p class="details__p">Register with&nbsp;us for future convenience</p>
+                <div class="control-group">
+                    <label class="control control-radio"> checkout as&nbsp;guest
+                        <input type="radio" name="radio" checked="checked" />
+                        <div class="control_indicator"></div>
+                    </label>
+                    <label class="control control-radio"> register
+                        <input type="radio" name="radio" />
+                        <div class="control_indicator"></div>
+                    </label>
+                </div>
+                <h3>register and save time!</h3>
+                <p class="details__p">Register with&nbsp;us for future convenience</p>
+                <p class="details__p">Fast and easy checkout</p>
+                <p class="details__p">Easy access to&nbsp;your order history and status</p>
+                <a href="#" class="checkout_button">Continue</a>
+            </div>
+            <div class="details__right">
+                <h3>Already registed?</h3>
+                <p class="details__p">Please log in&nbsp;below</p>
+                <form action="#" class="details__form">
+                    <p class="details__form__p">EMAIL&nbsp;ADDRESS<span>*</span></p>
+                    <input type="email">
+                    <p class="details__form__p">PASSWORD<span>*</span></p>
+                    <input type="password">
+                </form>
+                <p class="details__righ__p">* Required Fileds</p>
+                <div class="button">
+                    <a href="#" class="checkout_button">Log in</a>
+                    <a href="#"><p>Forgot Password ?</p></a>
+                </div>
+            </div>
         </div>
-        <div class="show_info_form">
-            <p>CHOOSE SIZE</p>
-            <select name="color_select" id="size">
-                <option value="red">XXL</option>
-                <option value="green">XL</option>
-                <option value="black">XS</option>
-                <option value="black">S</option>
-                <option value="black">M</option>
-            </select>
+    </details>
+    <details class="checkout__details">
+        <summary><span>02.</span>BILLING INFORMATION</summary>
+        <div class="details__container">
+            <div class="details__left">
+                <h3>Check as&nbsp;a&nbsp;guest or&nbsp;register</h3>
+                <p class="details__p">Register with&nbsp;us for future convenience</p>
+                <div class="control-group">
+                    <label class="control control-radio"> checkout as&nbsp;guest
+                        <input type="radio" name="radio" checked="checked" />
+                        <div class="control_indicator"></div>
+                    </label>
+                    <label class="control control-radio"> register
+                        <input type="radio" name="radio" />
+                        <div class="control_indicator"></div>
+                    </label>
+                </div>
+                <h3>register and save time!</h3>
+                <p class="details__p">Register with&nbsp;us for future convenience</p>
+                <p class="details__p">Fast and easy checkout</p>
+                <p class="details__p">Easy access to&nbsp;your order history and status</p>
+                <a href="#" class="checkout_button">Continue</a>
+            </div>
+            <div class="details__right">
+                <h3>Already registed?</h3>
+                <p class="details__p">Please log in&nbsp;below</p>
+                <form action="#" class="details__form">
+                    <p class="details__form__p">EMAIL&nbsp;ADDRESS<span>*</span></p>
+                    <input type="email">
+                    <p class="details__form__p">PASSWORD<span>*</span></p>
+                    <input type="password">
+                </form>
+                <p class="details__righ__p">* Required Fileds</p>
+                <div class="button">
+                    <a href="#" class="checkout_button">Log in</a>
+                    <a href="#"><p>Forgot Password ?</p></a>
+                </div>
+            </div>
         </div>
-        <div class="show_info_form">
-            <p>QUANTITY</p>
-            <select name="color_select" id="quantify">
-                <option value="red">2</option>
-                <option value="green">4</option>
-                <option value="black">6</option>
-            </select>
+    </details>
+    <details class="checkout__details">
+        <summary><span>03.</span>SHIPPING INFORMATION</summary>
+        <div class="details__container">
+            <div class="details__left">
+                <h3>Check as&nbsp;a&nbsp;guest or&nbsp;register</h3>
+                <p class="details__p">Register with&nbsp;us for future convenience</p>
+                <div class="control-group">
+                    <label class="control control-radio"> checkout as&nbsp;guest
+                        <input type="radio" name="radio" checked="checked" />
+                        <div class="control_indicator"></div>
+                    </label>
+                    <label class="control control-radio"> register
+                        <input type="radio" name="radio" />
+                        <div class="control_indicator"></div>
+                    </label>
+                </div>
+                <h3>register and save time!</h3>
+                <p class="details__p">Register with&nbsp;us for future convenience</p>
+                <p class="details__p">Fast and easy checkout</p>
+                <p class="details__p">Easy access to&nbsp;your order history and status</p>
+                <a href="#" class="checkout_button">Continue</a>
+            </div>
+            <div class="details__right">
+                <h3>Already registed?</h3>
+                <p class="details__p">Please log in&nbsp;below</p>
+                <form action="#" class="details__form">
+                    <p class="details__form__p">EMAIL&nbsp;ADDRESS<span>*</span></p>
+                    <input type="email">
+                    <p class="details__form__p">PASSWORD<span>*</span></p>
+                    <input type="password">
+                </form>
+                <p class="details__righ__p">* Required Fileds</p>
+                <div class="button">
+                    <a href="#" class="checkout_button">Log in</a>
+                    <a href="#"><p>Forgot Password ?</p></a>
+                </div>
+            </div>
         </div>
-    </div>
-    <a href="#" class="show_info_button">
-        <div class="show_info_button_div"> <img src="img/show_info_button_cut.png" alt="img">Add to&nbsp;Cart </div>
-    </a>
-</div>
-<div class="single_page_products container">
-    <h3>you may like also</h3>
-    <div class="single_page_products_box">
-        <div class="single_page_product">
-            <a href="#">
-                <div class="single_page_product_img"> <img src="img/single_page_product1.png" alt="img"> </div>
-            </a>
-            <div class="single_page_product_text"> <a href="single%20page.html">BLAZE LEGGINGS</a>
-                <p>$52.00</p> <img class="single_page_product_rating" src="img/rating.png" alt="rating"> </div>
-            <a class="product_basket" href="#"><img src="img/cart_hover.svg" alt="img">
-                <p>Add to&nbsp;Cart</p>
-            </a>
+    </details>
+    <details class="checkout__details">
+        <summary><span>04.</span>SHIPPING METHOD</summary>
+        <div class="details__container">
+            <div class="details__left">
+                <h3>Check as&nbsp;a&nbsp;guest or&nbsp;register</h3>
+                <p class="details__p">Register with&nbsp;us for future convenience</p>
+                <div class="control-group">
+                    <label class="control control-radio"> checkout as&nbsp;guest
+                        <input type="radio" name="radio" checked="checked" />
+                        <div class="control_indicator"></div>
+                    </label>
+                    <label class="control control-radio"> register
+                        <input type="radio" name="radio" />
+                        <div class="control_indicator"></div>
+                    </label>
+                </div>
+                <h3>register and save time!</h3>
+                <p class="details__p">Register with&nbsp;us for future convenience</p>
+                <p class="details__p">Fast and easy checkout</p>
+                <p class="details__p">Easy access to&nbsp;your order history and status</p>
+                <a href="#" class="checkout_button">Continue</a>
+            </div>
+            <div class="details__right">
+                <h3>Already registed?</h3>
+                <p class="details__p">Please log in&nbsp;below</p>
+                <form action="#" class="details__form">
+                    <p class="details__form__p">EMAIL&nbsp;ADDRESS<span>*</span></p>
+                    <input type="email">
+                    <p class="details__form__p">PASSWORD<span>*</span></p>
+                    <input type="password">
+                </form>
+                <p class="details__righ__p">* Required Fileds</p>
+                <div class="button">
+                    <a href="#" class="checkout_button">Log in</a>
+                    <a href="#"><p>Forgot Password ?</p></a>
+                </div>
+            </div>
         </div>
-        <div class="single_page_product">
-            <a href="#">
-                <div class="single_page_product_img"> <img src="img/single_page_product2.png" alt="img"> </div>
-            </a>
-            <div class="single_page_product_text"> <a href="single%20page.html">ALEXA SWEATER</a>
-                <p>$52.00</p> <img class="single_page_product_rating" src="img/rating.png" alt="rating"> </div>
-            <a class="product_basket" href="#"><img src="img/cart_hover.svg" alt="img">
-                <p>Add to&nbsp;Cart</p>
-            </a>
+    </details>
+    <details class="checkout__details">
+        <summary><span>05.</span>PAYMENT METHOD</summary>
+        <div class="details__container">
+            <div class="details__left">
+                <h3>Check as&nbsp;a&nbsp;guest or&nbsp;register</h3>
+                <p class="details__p">Register with&nbsp;us for future convenience</p>
+                <div class="control-group">
+                    <label class="control control-radio"> checkout as&nbsp;guest
+                        <input type="radio" name="radio" checked="checked" />
+                        <div class="control_indicator"></div>
+                    </label>
+                    <label class="control control-radio"> register
+                        <input type="radio" name="radio" />
+                        <div class="control_indicator"></div>
+                    </label>
+                </div>
+                <h3>register and save time!</h3>
+                <p class="details__p">Register with&nbsp;us for future convenience</p>
+                <p class="details__p">Fast and easy checkout</p>
+                <p class="details__p">Easy access to&nbsp;your order history and status</p>
+                <a href="#" class="checkout_button">Continue</a>
+            </div>
+            <div class="details__right">
+                <h3>Already registed?</h3>
+                <p class="details__p">Please log in&nbsp;below</p>
+                <form action="#" class="details__form">
+                    <p class="details__form__p">EMAIL&nbsp;ADDRESS<span>*</span></p>
+                    <input type="email">
+                    <p class="details__form__p">PASSWORD<span>*</span></p>
+                    <input type="password">
+                </form>
+                <p class="details__righ__p">* Required Fileds</p>
+                <div class="button">
+                    <a href="#" class="checkout_button">Log in</a>
+                    <a href="#"><p>Forgot Password ?</p></a>
+                </div>
+            </div>
         </div>
-        <div class="single_page_product">
-            <a href="#">
-                <div class="single_page_product_img"> <img src="img/single_page_product3.png" alt="img"> </div>
-            </a>
-            <div class="single_page_product_text"> <a href="single%20page.html">AGNES TOP</a>
-                <p>$52.00</p> <img class="single_page_product_rating" src="img/rating.png" alt="rating"> </div>
-            <a class="product_basket" href="#"><img src="img/cart_hover.svg" alt="img">
-                <p>Add to&nbsp;Cart</p>
-            </a>
+    </details>
+    <details class="checkout__details">
+        <summary><span>06.</span>ORDER REVIEW</summary>
+        <div class="details__container">
+            <div class="details__left">
+                <h3>Check as&nbsp;a&nbsp;guest or&nbsp;register</h3>
+                <p class="details__p">Register with&nbsp;us for future convenience</p>
+                <div class="control-group">
+                    <label class="control control-radio"> checkout as&nbsp;guest
+                        <input type="radio" name="radio" checked="checked" />
+                        <div class="control_indicator"></div>
+                    </label>
+                    <label class="control control-radio"> register
+                        <input type="radio" name="radio" />
+                        <div class="control_indicator"></div>
+                    </label>
+                </div>
+                <h3>register and save time!</h3>
+                <p class="details__p">Register with&nbsp;us for future convenience</p>
+                <p class="details__p">Fast and easy checkout</p>
+                <p class="details__p">Easy access to&nbsp;your order history and status</p>
+                <a href="#" class="checkout_button">Continue</a>
+            </div>
+            <div class="details__right">
+                <h3>Already registed?</h3>
+                <p class="details__p">Please log in&nbsp;below</p>
+                <form action="#" class="details__form">
+                    <p class="details__form__p">EMAIL&nbsp;ADDRESS<span>*</span></p>
+                    <input type="email">
+                    <p class="details__form__p">PASSWORD<span>*</span></p>
+                    <input type="password">
+                </form>
+                <p class="details__righ__p">* Required Fileds</p>
+                <div class="button">
+                    <a href="#" class="checkout_button">Log in</a>
+                    <a href="#"><p>Forgot Password ?</p></a>
+                </div>
+            </div>
         </div>
-        <div class="single_page_product">
-            <a href="#">
-                <div class="single_page_product_img"> <img class="single_page_product_img_img" src="img/single_page_product4.jpg" alt="img"> </div>
-            </a>
-            <div class="single_page_product_text"> <a href="single%20page.html">SYLVA SWEATER</a>
-                <p>$52.00</p> <img class="single_page_product_rating" src="img/rating.png" alt="rating"> </div>
-            <a class="product_basket" href="#"><img src="img/cart_hover.svg" alt="img">
-                <p>Add to&nbsp;Cart</p>
-            </a>
-        </div>
-    </div>
+    </details>
+
 </div>
 <footer class="comemnt">
     <div class="comment_content container">
@@ -518,7 +666,7 @@
 <footer class="footer">
     <div class="footer_top container">
         <div class="footer_top_left">
-            <a href="#" class="logo_footer"><img src="img/logo_header.png" alt="logo">BRAN<span>D</span></a>
+            <a href="index.html" class="logo_footer"><img src="img/logo_header.png" alt="logo">BRAN<span>D</span></a>
             <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go&nbsp;forward benefits. Intrinsicly syndicate an&nbsp;expanded array of&nbsp;processes and cross-unit partnerships.</p>
             <p>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
         </div>

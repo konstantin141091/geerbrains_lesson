@@ -1,20 +1,21 @@
 Vue.component('menuBar', {
     data(){
         return {
-
+            contentAPI: ''
         }
     },
     methods: {
 
     },
     mounted() {
+        this.contentAPI = this.$root.$refs["content-main"];
     },
     template: `
        <nav>
             <div class="container">
                 <ul class="menu">
-                    <li class="menu_list"><a class="menu_link" href="index.html">Home</a></li>
-                    <li class="menu_list"><a class="menu_link" href="catalog.html">Man</a>
+                    <li class="menu_list"><a class="menu_link" href="#" @click="contentAPI.getSelected(index)">Home</a></li>
+                    <li class="menu_list"><a class="menu_link" href="#" @click="contentAPI.getSelected('catalog')">Man</a>
                         <div class="drop">
                             <div class="drop_block">
                                 <p>MAN</p>

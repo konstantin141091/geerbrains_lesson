@@ -2,13 +2,25 @@ Vue.component('search', {
     data(){
         return {
             searchLine: '',
+            productAPI: '',
         }
     },
     methods: {
 
     },
+    mounted() {
+        if(window.location.toString() === 'http://localhost:3000/index.html'){
+            this.productAPI = this.$root.$refs["content-main"].$refs.products;
+            console.log(this.productAPI);
+        }
+        if(window.location.toString() === 'http://localhost:3000/catalog.html'){
+            console.log('123')
+            this.productAPI = this.$root;
+        }
+        console.log(window.location.toString());
+    },
     template: `
-        <form action="#" class="form_logo">
+        <form action="#" class="form_logo" @submit.prevent="productAPI.filter(searchLine)">
                     <div class="buttom_browse_div">
                         <a href="#" class="button_browse">
                             Browse
