@@ -1,6 +1,6 @@
 .cart_block {
-  height: 1123px;
-  padding-top: 90px; }
+  padding-top: 90px;
+  padding-bottom: 90px; }
 
 .cart_h3 {
   color: #222222;
@@ -15,9 +15,6 @@
 .cart_h3 {
   display: flex;
   justify-content: space-between; }
-
-.cart_products {
-  height: 713px; }
 
 .cart_h3_right {
   display: flex; }
@@ -60,6 +57,10 @@
 
 .cart_product_right {
   display: flex; }
+
+.cart_product_right img {
+  width: 100px;
+  height: 115px; }
 
 .cart_product_right img:hover {
   filter: brightness(35%); }
@@ -822,7 +823,8 @@ details summary::-webkit-details-marker {
   color: #636363;
   font-weight: 300;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer; }
 
 .block_show_menu a:hover {
   color: #f16d7f; }
@@ -841,7 +843,9 @@ details summary::-webkit-details-marker {
   justify-content: center; }
 
 .show_bottom_content img {
-  margin-top: 11px; }
+  margin-top: 11px;
+  width: 597px;
+  height: 724px; }
 
 .show_info {
   height: 730px;
@@ -1086,7 +1090,8 @@ a {
   font-weight: 300;
   line-height: 32px;
   text-transform: uppercase;
-  letter-spacing: 0.68px; }
+  letter-spacing: 0.68px;
+  cursor: pointer; }
 
 .logo_header img {
   margin-right: 13px; }
@@ -1185,7 +1190,8 @@ nav {
   font-weight: 700;
   line-height: 26px;
   padding: 20px 20px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer; }
 
 .menu_link:hover {
   color: #f16d7f; }
@@ -1657,7 +1663,8 @@ main {
   font-size: 13px;
   font-weight: 700;
   line-height: 39px;
-  display: none; }
+  display: none;
+  cursor: pointer; }
 
 .product_basket img {
   margin: 10px 0 0 12px;
@@ -1862,7 +1869,8 @@ main {
   text-transform: uppercase;
   text-decoration: none;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  cursor: pointer; }
 
 .basket_drop_buttom:hover {
   border: solid 1px #f16d7f;

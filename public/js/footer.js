@@ -1,13 +1,14 @@
 Vue.component('footerComp', {
     data(){
         return {
-
+            contentAPI: '',
         }
     },
     methods: {
 
     },
     mounted() {
+        this.contentAPI = this.$root.$refs["content-main"];
     },
     template: `
              <footer>
@@ -46,11 +47,11 @@ Vue.component('footerComp', {
                             <div class="footer_menu_top">
                                 <p>COMPANY</p>
                                 <ul class="footer_menu">
-                                    <li><a href="index.html">Home </a></li>
-                                    <li><a href="#">Shop</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">How It&nbsp;Works</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#" @click="contentAPI.getSelected('index')">Home </a></li>
+                                    <li><a href="#" @click="contentAPI.getSelected('index')">Shop</a></li>
+                                    <li><a href="#" @click="contentAPI.getSelected('index')">About</a></li>
+                                    <li><a href="#" @click="contentAPI.getSelected('index')">How It&nbsp;Works</a></li>
+                                    <li><a href="#" @click="contentAPI.getSelected('index')">Contact</a></li>
                                 </ul>
                             </div>
                             <div class="footer_menu_top">
@@ -66,11 +67,11 @@ Vue.component('footerComp', {
                             <div class="footer_menu_top">
                                 <p>SHOP CATEGORY</p>
                                 <ul class="footer_menu">
-                                    <li><a href="catalog.html">Men</a></li>
-                                    <li><a href="catalog.html">Women</a></li>
-                                    <li><a href="catalog.html">Child</a></li>
-                                    <li><a href="catalog.html">Apparel</a></li>
-                                    <li><a href="catalog.html">Brows All</a></li>
+                                    <li><a href="#" @click="contentAPI.getSelected('catalog')">Men</a></li>
+                                    <li><a href="#" @click="contentAPI.getSelected('catalog')">Women</a></li>
+                                    <li><a href="#" @click="contentAPI.getSelected('catalog')">Child</a></li>
+                                    <li><a href="#" @click="contentAPI.getSelected('catalog')">Apparel</a></li>
+                                    <li><a href="#" @click="contentAPI.getSelected('catalog')">Brows All</a></li>
                                 </ul>
                             </div>
                         </div>

@@ -1,6 +1,6 @@
 .cart_block {
-  height: 1123px;
   padding-top: 90px;
+  padding-bottom: 90px;
 }
 .cart_h3 {
   color: #222222;
@@ -16,9 +16,9 @@
   display: flex;
   justify-content: space-between;
 }
-.cart_products {
-  height: 713px;
-}
+//.cart_products {
+//  height: 713px;
+//}
 .cart_h3_right {
   display: flex;
 }
@@ -61,6 +61,10 @@
 }
 .cart_product_right {
   display: flex;
+}
+.cart_product_right img {
+  width: 100px;
+  height: 115px;
 }
 .cart_product_right img:hover {
   filter: brightness(35%);

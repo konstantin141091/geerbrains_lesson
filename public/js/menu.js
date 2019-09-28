@@ -1,7 +1,8 @@
 Vue.component('menuBar', {
     data(){
         return {
-            contentAPI: ''
+            contentAPI: '',
+
         }
     },
     methods: {
@@ -14,8 +15,8 @@ Vue.component('menuBar', {
        <nav>
             <div class="container">
                 <ul class="menu">
-                    <li class="menu_list"><a class="menu_link" href="#" @click="contentAPI.getSelected(index)">Home</a></li>
-                    <li class="menu_list"><a class="menu_link" href="#" @click="contentAPI.getSelected('catalog')">Man</a>
+                    <li class="menu_list"><a class="menu_link" @click="contentAPI.getSelected('index')">Home</a></li>
+                    <li class="menu_list"><a class="menu_link" @click="contentAPI.getSelected('catalog')">Man</a>
                         <div class="drop">
                             <div class="drop_block">
                                 <p>MAN</p>
@@ -67,7 +68,7 @@ Vue.component('menuBar', {
                             </div>
                         </div>
                     </li>
-                    <li class="menu_list"><a class="menu_link" href="catalog.html">Women</a>
+                    <li class="menu_list"><a class="menu_link" @click="contentAPI.getSelected('catalog')">Women</a>
                         <div class="drop">
                             <div class="drop_block">
                                 <p>MAN</p>
@@ -119,7 +120,7 @@ Vue.component('menuBar', {
                             </div>
                         </div>
                     </li>
-                    <li class="menu_list"><a class="menu_link" href="catalog.html">Kids</a>
+                    <li class="menu_list"><a class="menu_link" @click="contentAPI.getSelected('catalog')">Kids</a>
                         <div class="drop drop_position_center">
                             <div class="drop_block">
                                 <p>MAN</p>
@@ -171,7 +172,7 @@ Vue.component('menuBar', {
                             </div>
                         </div>
                     </li>
-                    <li class="menu_list"><a class="menu_link" href="catalog.html">Accoseriese</a>
+                    <li class="menu_list"><a class="menu_link" @click="contentAPI.getSelected('catalog')">Accoseriese</a>
                         <div class="drop drop_position_center">
                             <div class="drop_block">
                                 <p>MAN</p>
@@ -223,7 +224,7 @@ Vue.component('menuBar', {
                             </div>
                         </div>
                     </li>
-                    <li class="menu_list"><a class="menu_link" href="catalog.html">Featured</a>
+                    <li class="menu_list"><a class="menu_link" @click="contentAPI.getSelected('catalog')">Featured</a>
                         <div class="drop drop_position_right">
                             <div class="drop_block">
                                 <p>MAN</p>
@@ -275,7 +276,7 @@ Vue.component('menuBar', {
                             </div>
                         </div>
                     </li>
-                    <li class="menu_list"><a class="menu_link" href="catalog.html">Hot Deals</a>
+                    <li class="menu_list"><a class="menu_link" @click="contentAPI.getSelected('catalog')">Hot Deals</a>
                         <div class="drop drop_position_right">
                             <div class="drop_block">
                                 <p>MAN</p>

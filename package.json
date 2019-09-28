@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/konstantin141091/geerbrains_lesson#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "ion-rangeslider": "^2.3.0"
   }
 }

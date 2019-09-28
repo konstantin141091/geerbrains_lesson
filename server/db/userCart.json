@@ -1,20 +1,15 @@
 {
-    "amount": 46600,
     "countGoods": 3,
+    "amount": 400,
     "contents": [
         {
-            "quantity": 1,
-            "id_product": 101,
-            "product_name": "Gamepad",
-            "price": 3000,
-            "img": "img/tovar2.jpg"
-        },
-        {
-            "quantity": 1,
-            "id_product": 100,
-            "product_name": "Keyboard",
-            "price": 1600,
-            "img": "img/tovar1.jpg"
+            "quantity": 4,
+            "category": "men",
+            "url": "index",
+            "id_product": 102,
+            "product_name": "Куртка красивая",
+            "price": 100,
+            "img": "img/tovar3.png"
         }
     ]
 }

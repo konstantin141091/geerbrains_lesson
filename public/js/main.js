@@ -37,12 +37,13 @@ const app = new Vue({
                     this.$refs.error.setError(error);
                 });
         },
-        deleteJson(url) {
+        deleteJson(url, data) {
             return fetch(url, {
                 method: 'DELETE',
                 headers: {
                     "Content-Type": "application/json"
                 },
+                body: JSON.stringify(data)
             }).then(result => result.json())
                 .catch(error => {
                     console.log(error);
@@ -51,7 +52,6 @@ const app = new Vue({
     },
     mounted() {
         console.log(this);
-        console.log(window.location.toString());
     },
 
 });

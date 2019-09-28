@@ -9,15 +9,7 @@ Vue.component('search', {
 
     },
     mounted() {
-        if(window.location.toString() === 'http://localhost:3000/index.html'){
-            this.productAPI = this.$root.$refs["content-main"].$refs.products;
-            console.log(this.productAPI);
-        }
-        if(window.location.toString() === 'http://localhost:3000/catalog.html'){
-            console.log('123')
-            this.productAPI = this.$root;
-        }
-        console.log(window.location.toString());
+
     },
     template: `
         <form action="#" class="form_logo" @submit.prevent="productAPI.filter(searchLine)">
