@@ -1,0 +1,342 @@
+<template>
+    <main>
+        <div class="block_show">
+            <div class="block_show_top">
+                <div class="block_show_top_content container">
+                    <p>New Arrivals </p>
+                    <div class="block_show_menu"> <a>Home</a>&nbsp;/ <a>Men</a>&nbsp;/ <a href="#">New Arrivals</a> </div>
+                </div>
+            </div>
+            <div class="block_show_bottom">
+                <div class="show_bottom_content container"> <img :src="item.img" alt="img"> </div>
+            </div>
+        </div>
+        <div class="show_info container">
+            <div class="show_info_text">
+                <p>WOMEN COLLECTION</p> <img src="img/show_info_hr_white.png" alt="img"> <img src="img/show_info_hr.png" alt="img">
+                <p>Moschino Cheap And Chic</p>
+                <p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+                <p>MATERIAL: <span>COTTON</span>DESIGNER: <span>BINBURHAN</span></p>
+                <p>$ {{ item.price }}</p> <img src="img/show_info_hr_long.png" alt="img">
+            </div>
+            <div class="show_info_bottom">
+                <div class="show_info_form">
+                    <p>CHOOSE COLOR</p>
+                    <select name="color_select" id="color">
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="black">Black</option>
+                    </select>
+                </div>
+                <div class="show_info_form">
+                    <p>CHOOSE SIZE</p>
+                    <select name="color_select" id="size">
+                        <option value="XXL">XXL</option>
+                        <option value="XL">XL</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                    </select>
+                </div>
+                <div class="show_info_form">
+                    <p>QUANTITY</p>
+                    <select name="color_select" id="quantify" v-model="quantityLine">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                    </select>
+                </div>
+            </div>
+            <a @click="cartAPI.addProduct(item, quantityLine)" class="show_info_button">
+                <div class="show_info_button_div"> <img src="img/show_info_button_cut.png" alt="img">Add to&nbsp;Cart </div>
+            </a>
+        </div>
+        <div class="single_page_products container">
+            <h3>you may like also</h3>
+            <products ref="products" :type="3"></products>
+        </div>
+
+    </main>
+</template>
+
+<script>
+    import products from '@/components/products.vue';
+    export default {
+        name: "SingleContent",
+        components: {
+            products,
+        },
+        data(){
+            return {
+                item: {},
+                quantityLine: 0,
+                cartAPI: this.$root.$children[0].$children[0].$refs.header.$refs.cart,
+            }
+        },
+        mounted() {
+            this.item = this.$store.state.singleItem;
+        }
+    }
+</script>
+
+<style scoped>
+    .block_show {
+        height: 925px;
+    }
+    .block_show_top_content {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .block_show_top_content p {
+        color: #f16d7f;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .block_show_menu a {
+        font-size: 14px;
+        color: #636363;
+        font-weight: 300;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .block_show_menu a:hover {
+        color: #f16d7f;
+    }
+    .show_menu_activ {
+        color: #f16d7f!important;
+        font-weight: 700!important;
+    }
+    .block_show_bottom {
+        height: 777px;
+        border: 1px solid #eaeaea;
+        background-color: #f7f7f7;
+    }
+    .show_bottom_content {
+        display: flex;
+        justify-content: center;
+    }
+    .show_bottom_content img {
+        margin-top: 11px;
+        width: 597px;
+        height: 724px;
+    }
+    .show_info {
+        height: 730px;
+        border: 1px solid #eaeaea;
+        background-color: #ffffff;
+        margin-top: -86px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .show_info_text p:nth-child(1) {
+        color: #f16d7f;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 73px 0 14px 0;
+    }
+    .show_info_text img:nth-child(3) {
+        margin-top: -2px;
+    }
+    .show_info_text p:nth-child(4) {
+        color: #4d4d4d;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: 17px;
+    }
+    .show_info_text p:nth-child(5) {
+        text-align: center;
+        letter-spacing: -0.1px;
+        margin-top: 67px;
+        width: 618px;
+        color: #5e5e5e;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .show_info_text p:nth-child(6) {
+        color: #b9b9b9;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-top: 23px;
+        margin-left: 24px;
+    }
+    .show_info_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .show_info_text p span {
+        color: #2f2f2f;
+    }
+    .show_info_text p span:nth-child(1) {
+        padding-right: 44px;
+    }
+    .show_info_text p:nth-child(7) {
+        color: #ef5b70;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-top: 37px;
+    }
+    .show_info_text img:nth-child(8) {
+        margin-top: 41px;
+    }
+    select {
+        width: 144px;
+        height: 35px;
+        border: 1px solid #eaeaea;
+        background-color: #ffffff;
+        color: #bcbcbc;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    /*This will work for firefox*/
+    @-moz-document url-prefix() {
+        select {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+            background: transparent url('../assets/img/arrow_single_page.png') no-repeat right center;
+            background-position: 126px;
+            padding: 2px 30px 2px 2px;
+            border: 1px solid #eaeaea;
+        }
+    }
+    .show_info_bottom {
+        display: flex;
+        width: 538px;
+        justify-content: space-between;
+        margin-top: 63px;
+    }
+    .show_info_form p {
+        color: #2f2f2f;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 11px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+    .show_info_button_div {
+        width: 537px;
+        height: 55px;
+        border: 1px solid #eaeaea;
+        background-color: #ffffff;
+        color: #4a4a4a;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .show_info_button_div:hover {
+        border: 1px solid #f16d7f;
+        color: #f16d7f;
+    }
+    .show_info_button_div img {
+        margin-right: 15px;
+    }
+    .show_info_button {
+        text-decoration: none;
+        margin-top: 28px;
+    }
+    .single_page_products h3 {
+        color: #4d4d4d;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 119px;
+    }
+    .single_page_products {
+        height: 559px;
+    }
+    .single_page_product {
+        width: 261px;
+        height: 364px;
+        position: relative;
+        transition: 0.5s;
+    }
+    .single_page_product_img {
+        height: 280px;
+        background-color: #e9e9e9;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .single_page_product_text a {
+        display: block;
+        margin: 18px 0 0 14px;
+        color: #6f6e6e;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .single_page_product_text p {
+        color: #f16d7f;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        float: left;
+        margin: 17px 0 0 14px;
+    }
+    .single_page_product_rating {
+        float: right;
+        margin: 17px 13px 0 0px;
+        display: none;
+    }
+    .single_page_product:hover {
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+        transform: scale(1.1);
+    }
+    .single_page_product:hover .product_basket {
+        display: block;
+    }
+    .single_page_product:hover .single_page_product_rating {
+        display: block;
+    }
+    .single_page_product:hover .single_page_product_img {
+        filter: brightness(35%);
+    }
+
+    .show_info_form select {
+        outline: none;
+    }
+    .single_page_product_img_img {
+        width: 100%;
+    }
+    .block_show_top {
+        height: 148px;
+        background-color: #f8f3f4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>

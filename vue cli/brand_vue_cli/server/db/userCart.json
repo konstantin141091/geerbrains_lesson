@@ -1,0 +1,22 @@
+{
+    "countGoods": 3,
+    "amount": 15000,
+    "contents": [
+        {
+            "quantity": 2,
+            "url": "index",
+            "id_product": 105,
+            "product_name": "Gamepad",
+            "price": 3000,
+            "img": "img/tovar6.jpg"
+        },
+        {
+            "quantity": 3,
+            "url": "index",
+            "id_product": 101,
+            "product_name": "Gamepad",
+            "price": 3000,
+            "img": "img/tovar2.jpg"
+        }
+    ]
+}
