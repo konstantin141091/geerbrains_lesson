@@ -1,0 +1,137 @@
+[
+  {
+    "url": "index",
+    "id_product": 100,
+    "product_name": "Keyboard",
+    "price": 1600,
+    "img": "img/tovar1.jpg"
+  },
+  {
+    "url": "index",
+    "id_product": 101,
+    "product_name": "Gamepad",
+    "price": 3000,
+    "img": "img/tovar2.jpg"
+  },
+  {
+    "category": "men",
+    "url": "index",
+    "id_product": 102,
+    "product_name": "Куртка красивая",
+    "price": 100,
+    "img": "img/tovar3.png"
+  },
+  {
+    "url": "index",
+    "id_product": 103,
+    "product_name": "Мышка",
+    "price": 1000,
+    "img": "img/tovar4.jpg"
+  },
+  {
+    "url": "index",
+    "id_product": 104,
+    "product_name": "Keyboard",
+    "price": 1600,
+    "img": "img/tovar5.jpg"
+  },
+  {
+    "url": "index",
+    "id_product": 105,
+    "product_name": "Gamepad",
+    "price": 3000,
+    "img": "img/tovar6.jpg"
+  },
+  {
+    "url": "index",
+    "id_product": 106,
+    "product_name": "Ноутбук",
+    "price": 45600,
+    "img": "img/tovar7.jpg"
+  },
+  {
+    "category": "men",
+    "url": "index",
+    "id_product": 107,
+    "product_name": "Кофта синяя",
+    "price": 50,
+    "img": "img/tovar8.jpg"
+  },
+  {
+    "category": "men",
+    "id_product": 108,
+    "product_name": "Куртка черная",
+    "price": 120,
+    "img": "img/catalog_img1.jpg"
+  },
+  {
+    "category": "men",
+    "id_product": 109,
+    "product_name": "Куртка длиная",
+    "price": 110,
+    "img": "img/catalog_img2.jpg"
+  },
+  {
+    "category": "men",
+    "id_product": 110,
+    "product_name": "Футболка стремная",
+    "price": 30,
+    "img": "img/catalog_img4.png"
+  },
+  {
+    "category": "men",
+    "id_product": 112,
+    "product_name": "Безрукавка",
+    "price": 45,
+    "img": "img/catalog_img6.png"
+  },
+  {
+    "category": "men",
+    "id_product": 113,
+    "product_name": "Пиджак",
+    "price": 60,
+    "img": "img/catalog_img7.jpg"
+  },
+  {
+    "category": "men",
+    "id_product": 114,
+    "product_name": "Еще куртка",
+    "price": 110,
+    "img": "img/catalog_img2.jpg"
+  },
+  {
+    "category": "men",
+    "id_product": 115,
+    "product_name": "Просто футболка",
+    "price": 30,
+    "img": "img/catalog_img9.png"
+  },
+  {
+    "url": "singlePage",
+    "id_product": 116,
+    "product_name": "Костюм черный",
+    "price": 120,
+    "img": "img/single_page_product1.png"
+  },
+  {
+    "url": "singlePage",
+    "id_product": 117,
+    "product_name": "Юбка",
+    "price": 80,
+    "img": "img/single_page_product2.png"
+  },
+  {
+    "url": "singlePage",
+    "id_product": 118,
+    "product_name": "Брюки",
+    "price": 90,
+    "img": "img/single_page_product3.png"
+  },
+  {
+    "url": "singlePage",
+    "id_product": 119,
+    "product_name": "Кофта серая",
+    "price": 70,
+    "img": "img/single_page_product4.jpg"
+  }
+]
